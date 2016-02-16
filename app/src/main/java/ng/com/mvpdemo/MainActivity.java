@@ -76,8 +76,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 
     @Override
     public void onClearText() {
-        mETName.setText("");
         mETPwd.setText("");
+        mETName.setText("");
+
     }
 
     @Override
