@@ -24,7 +24,7 @@ public class UserModel implements IUser {
 
     @Override
     public int checkUserValidity(String name, String passwd) {
-        if (name == null || passwd == null || !name.equals(getPassword()) || !passwd.equals(getPassword())) {
+        if (name == null || passwd == null || !name.equals(getUserName()) || !passwd.equals(getPassword())) {
             return -1;
         }
         return 0;

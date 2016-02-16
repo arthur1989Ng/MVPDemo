@@ -5,10 +5,10 @@ package ng.com.mvpdemo.view;
  */
 public interface ILoginView {
 
-    public void onClearText();
+    void onClearText();
 
-    public void onLoginResult(boolean result, int code);
+    void onLoginResult(boolean result, int code);
 
-    public void onSetProgressBarVisibility(int visibility);
+    void onSetProgressBarVisibility(int visibility);
 
 }
