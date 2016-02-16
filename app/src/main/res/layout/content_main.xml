@@ -13,7 +13,70 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:layout_toLeftOf="@+id/et_name"
+        android:layout_toStartOf="@+id/et_name"
+        android:gravity="center_vertical"
+        android:text="User Name"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/et_name"
+        android:layout_toStartOf="@+id/et_name"
+        android:gravity="center_vertical"
+        android:text="Password"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/tv_pw"
+        android:layout_alignLeft="@+id/et_name"
+        android:layout_alignStart="@+id/et_name"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/tv_pw"
+        android:layout_marginTop="36dp"
+        android:text="LOGIN" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_login"
+        android:layout_alignLeft="@+id/et_pw"
+        android:layout_alignStart="@+id/et_pw"
+        android:layout_marginLeft="20dp"
+        android:text="CLEAR" />
+
+
 </RelativeLayout>
